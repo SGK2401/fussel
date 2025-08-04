@@ -15,6 +15,7 @@ class YamlConfig:
             self.cfg = yaml.safe_load(stream)
 
         input_path = self.getKey('gallery.input_path')
+        print(input_path)
         if not os.path.isdir(input_path):
             print(f'Invalid input path: {input_path}')
             exit(-1)

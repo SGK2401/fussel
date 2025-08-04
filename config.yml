@@ -1,7 +1,7 @@
 
 gallery:
   # Path to the root of your photo files
-  input_path: "./gallary"
+  input_path: "../gallery"
 
   # Path to output the site to
   # Default: "site/"
