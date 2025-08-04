@@ -14,7 +14,7 @@ jobs:
       - name: setup
         run: ./setup.sh
       - name: build
-        run: generate.sh
+        run: ./generate.sh
       - name: PagesSetup
         uses: actions/configure-pages@v5
       - name: PagesBuild
