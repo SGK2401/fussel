@@ -1,7 +1,7 @@
 
 gallery:
   # Path to the root of your photo files
-  input_path: "/path/to/my/photos"
+  input_path: "./gallary"
 
   # Path to output the site to
   # Default: "site/"
@@ -42,16 +42,16 @@ gallery:
   watermark:
     # Enable placement of watermark in bottom right corner of photos.
     # Default: True
-    enable: True
+    enable: False
 
     # Specify path to custome watermark
     # Should be a transparent png
     # Default: "web/src/images/fussel-watermark.png"
-    path: "web/src/images/fussel-watermark.png"
+    # path: "web/src/images/fussel-watermark.png"
 
     # Watermark size ratio (0.0 -> 1.0)
     # Default: 0.3
-    size_ratio: 0.3
+    # size_ratio: 0.3
 
 site:
   # Set http_root to the root url you intend to host the site.
@@ -63,4 +63,4 @@ site:
 
   # Title shown at the top of the browser tab
   # Default: "Fussel Gallery"
-  title: "Fussel Gallery"
+  title: "SGK2's Gallery"
