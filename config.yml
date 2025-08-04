@@ -1,7 +1,7 @@
 
 gallery:
   # Path to the root of your photo files
-  input_path: "../gallery"
+  input_path: "/mnt/c/Users/sgk24/OneDrive/Pictures/Gallary"
 
   # Path to output the site to
   # Default: "site/"
@@ -18,7 +18,7 @@ gallery:
 
   # Attempt to orient the photo based on embedded EXIF data
   # Default: exif_transpose: False
-  exif_transpose: False
+  exif_transpose: True
 
   albums:
     # Recursively process sub-folders as albums
@@ -37,7 +37,7 @@ gallery:
     # Setting to True adds a faces button and virtual albums for detected people
     # Setting to False disables the feature
     # Default: True
-    enable: True
+    enable: False
 
   watermark:
     # Enable placement of watermark in bottom right corner of photos.
@@ -47,11 +47,11 @@ gallery:
     # Specify path to custome watermark
     # Should be a transparent png
     # Default: "web/src/images/fussel-watermark.png"
-    # path: "web/src/images/fussel-watermark.png"
+    path: "web/src/images/fussel-watermark.png"
 
     # Watermark size ratio (0.0 -> 1.0)
     # Default: 0.3
-    # size_ratio: 0.3
+    size_ratio: 0.3
 
 site:
   # Set http_root to the root url you intend to host the site.
@@ -59,7 +59,7 @@ site:
   # If you host this service at http://<site>/my/photo/album/ set to 'http://<site>/my/photo/album/'
   # Include trailing slash
   # Default: "/"
-  http_root: "/"    
+  http_root: "/"
 
   # Title shown at the top of the browser tab
   # Default: "Fussel Gallery"
