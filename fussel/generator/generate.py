@@ -307,6 +307,13 @@ class Albums:
             root_path, e), os.listdir(root_path)))
         paths = list(filter(lambda e: is_supported_album(e), entries))
 
+        # 在 Albums.process_path 函数中添加
+        print(f"Scanning directory: {root_path}")
+        entries = list(map(lambda e: os.path.join(root_path, e), os.listdir(root_path)))
+        print(f"Found entries: {entries}")
+        paths = list(filter(lambda e: is_supported_album(e), entries))
+        print(f"Filtered albums: {paths}")
+
         for album_path in paths:
             album_name = os.path.basename(album_path)
             if not album_name.startswith('.'):  # skip dotfiles
@@ -340,6 +347,7 @@ class Albums:
         jobs = []
 
         for album_file in files:
+            print(f'Processing file: {album_file}')
             if album_file.startswith('.'):  # skip dotfiles
                 continue
             photo_file = os.path.join(album_dir, album_file)

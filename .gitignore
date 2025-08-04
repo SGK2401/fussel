@@ -5,6 +5,8 @@ __pycache__/
 *.swp
 .env
 
+site/
+
 fussel/web/src/_gallery
 fussel/web/build/
 fussel/web/public/static/_gallery
