@@ -16,8 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # - name: setup
-      #   run: ./setup.sh
+      - name: setup
+        run: ./setup.sh
       - name: build
         run: ./generate.sh
       - name: PagesSetup
