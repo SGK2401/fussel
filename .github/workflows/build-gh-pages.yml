@@ -17,9 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: setup
-        run: ./setup.sh
+        run: sudo ./setup.sh
       - name: build
-        run: ./generate.sh
+        run: sudo ./generate.sh
       - name: PagesSetup
         uses: actions/configure-pages@v5
       - name: PagesBuild
