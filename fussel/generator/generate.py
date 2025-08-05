@@ -351,8 +351,9 @@ class Albums:
             print(f"File: {album_dir}   {album_file}")
             if _fileName.startswith('.'):  # skip dotfiles
                 continue
-            if os.path.isabs(album_dir): photo_file = os.path.join(album_dir, album_file)
-            else: photo_file = album_file
+            _photofile = os.path.join(album_dir, album_file)
+            if os.path.isabs(album_dir): photo_file = _photofile
+            else: photo_file = os.path.abspath(album_file)
             filename = os.path.basename(os.path.basename(photo_file))
             print(f'Processing file: {photo_file}   {filename}')
 

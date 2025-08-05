@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Fussel Gallery",
   "keywords": [],
-  "homepage": "http://media.sgk2401.com/",
+  "homepage": "/",
   "license": "MIT",
   "dependencies": {
     "bulma": "^0.9.4",
