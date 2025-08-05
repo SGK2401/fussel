@@ -347,11 +347,14 @@ class Albums:
         jobs = []
 
         for album_file in files:
-            print(f'Processing file: {album_file}')
-            if album_file.startswith('.'):  # skip dotfiles
+            _fileName = os.path.basename(album_file)
+            print(f"File: {album_dir}   {album_file}")
+            if _fileName.startswith('.'):  # skip dotfiles
                 continue
-            photo_file = os.path.join(album_dir, album_file)
+            if os.path.isabs(album_dir): photo_file = os.path.join(album_dir, album_file)
+            else: photo_file = album_file
             filename = os.path.basename(os.path.basename(photo_file))
+            print(f'Processing file: {photo_file}   {filename}')
 
             # Get a unique slug
             unique_slug = find_unique_slug(

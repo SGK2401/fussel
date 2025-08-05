@@ -11,11 +11,11 @@ gallery:
   # Setting to True will force a full rebuild of the gallery photos.
   # Setting to False will only generate files which are missing or added
   # Default: False
-  overwrite: True
+  overwrite: False
 
   # The number of parallel processing tasks that will be used
   # Default: <number_of_cores> / 2
-  parallel_tasks: 1
+  # parallel_tasks: 1
 
   # Attempt to orient the photo based on embedded EXIF data
   # Default: exif_transpose: False
@@ -60,7 +60,7 @@ site:
   # If you host this service at http://<site>/my/photo/album/ set to 'http://<site>/my/photo/album/'
   # Include trailing slash
   # Default: "/"
-  http_root: "/"
+  http_root: "http://media.sgk2401.com/"
 
   # Title shown at the top of the browser tab
   # Default: "Fussel Gallery"
